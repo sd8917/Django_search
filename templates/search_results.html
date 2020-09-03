@@ -1,0 +1,16 @@
+<!-- templates/search_results.html -->
+<h1>Search Results</h1>
+
+<ul>
+  {% for city in object_list %}
+    
+    {% if city.name %}
+        <li>
+          {{city.name}}
+        </li>
+    {% else %}
+        no city
+    {% endif %}
+      
+  {% endfor %}
+</ul>
